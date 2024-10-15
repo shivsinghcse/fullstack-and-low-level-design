@@ -101,7 +101,6 @@ function printName(name) {
 
 printName('Shiv');
 
-
 // arrays----
 
 // used to store multiple  values of multiple datatypes.
@@ -127,10 +126,9 @@ let cars = ['BMW', 'Mercedes'];
 // console.log(removedValue);
 // console.log(cars, 'after using the pop');
 
-
 // unshift
 // add an element to begnning of an array
-cars.unshift('Ferrari')
+cars.unshift('Ferrari');
 console.log(cars, 'after using unshift');
 
 // shift
@@ -138,6 +136,66 @@ console.log(cars, 'after using unshift');
 // cars.shift()
 // console.log(cars, 'after using shift');
 
+// ------  Objects
 
-// ------  Object
+// stores data in key-value pairs
 
+let person = {
+    name: 'Shiv',
+    city: 'Lucknow',
+};
+
+console.log(person);
+console.log(person.name);
+console.log(person['city']);
+
+let captainAmerica = {
+    name: 'Steve Rogers',
+    age: 102,
+    alias: ['captain', 'leader', 'avenger', 'cap'],
+    sayHi: function () {
+        console.log('Hi from cap.');
+    },
+    address: {
+        country: 'USA',
+        city: {
+            name: 'California',
+            pincode: 123456,
+        },
+    },
+    isDCRanger: false,
+};
+
+console.log(captainAmerica);
+console.log(captainAmerica.alias[2]);
+console.log(captainAmerica.sayHi());
+console.log(captainAmerica.isDCRanger);
+console.log(captainAmerica.address.country);
+console.log(captainAmerica.address.city.name);
+
+/*
+    {
+  name: 'Steve Rogers',
+  age: 102,
+  alias: [ 'captain', 'leader', 'avenger', 'cap' ],
+  sayHi: [Function: sayHi],
+  address: { country: 'USA', city: { name: 'California', pincode: 123456 } },
+  isDCRanger: false
+}
+avenger
+Hi from cap.
+undefined
+false
+USA
+California
+*/
+
+// add a property in object
+
+captainAmerica.movies = ['End game', 'Civil war'];
+console.log(captainAmerica, 'after adding movies property');
+
+// delete a property
+
+delete captainAmerica.age;
+console.log(captainAmerica, 'after deleting age');
