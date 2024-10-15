@@ -73,7 +73,6 @@ i am a template literal string
 // console.log(message);
 // console.log(message2);
 
-
 // boolean
 
 // let isEven = true;
@@ -88,8 +87,57 @@ i am a template literal string
 // let course;
 // console.log(course, '[course]');
 
-// null 
+// null
 // when value for the variable DO NOT Exists.
 // nothing or empty
-let finalMarks = null;
-console.log(finalMarks);
+// let finalMarks = null;
+// console.log(finalMarks);
+
+// ------Functions -------
+
+function printName(name) {
+    console.log('Hi', name);
+}
+
+printName('Shiv');
+
+
+// arrays----
+
+// used to store multiple  values of multiple datatypes.
+// saves elements in index manner.
+//         0  1  2  3   4     5
+// let arr = [1, 2, 3, 4, 'Hi', true]
+// array indexing starts from zero.
+// console.log(arr); // [1, 2, 3, 4, 'Hi', true]
+// console.log(arr[2]); // 3
+
+// arr[0] = undefined;
+// console.log(arr[0]);
+
+// console.log(arr.length); // no. of elements in the array
+
+// array methods -----
+
+let cars = ['BMW', 'Mercedes'];
+// push = adds an element at the end of the array
+// cars.push("Audi");
+// pop = deletes the 'Last' element from an array
+// const removedValue = cars.pop();
+// console.log(removedValue);
+// console.log(cars, 'after using the pop');
+
+
+// unshift
+// add an element to begnning of an array
+cars.unshift('Ferrari')
+console.log(cars, 'after using unshift');
+
+// shift
+// remove the first / 0th element
+// cars.shift()
+// console.log(cars, 'after using shift');
+
+
+// ------  Object
+
