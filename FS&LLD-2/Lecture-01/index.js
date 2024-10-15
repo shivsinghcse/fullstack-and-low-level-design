@@ -1,11 +1,11 @@
 console.log('Hi, I an running from external JS file.');
 
 // valid JS
-var a = true;
-console.log(a);
+// var a = true;
+// console.log(a);
 
-var b = false;
-console.log(b);
+// var b = false;
+// console.log(b);
 
 // will throw error
 
@@ -22,3 +22,74 @@ console.log(b);
 // goat = 'Kohli';
 
 // console.log(goat);
+
+// --- Data type in JS---
+
+// let a = 1;
+// let b = 0.12323;
+// let c = -120.4;
+// let d = 2 / 0;
+// let special = 'hello' / 0;
+
+// console.log(a, typeof a);
+// console.log(b, typeof b);
+// console.log(c, typeof c);
+// console.log(d, typeof d);
+// console.log(special, typeof special);
+
+/*
+
+1 number
+0.12323 number
+-120.4 number
+Infinity number
+NaN number
+
+*/
+
+// --- String
+
+// let str = 'JS';
+// let str2 = 'Hello';
+// let str3 = `i am a template literal`;
+
+// console.log(str, typeof str);
+// console.log(str2, typeof str2);
+// console.log(str3, typeof str3);
+
+/*
+JS string
+Hello string
+i am a template literal string
+*/
+
+// 50 crore views online.
+
+// let userCount = '50 Crores';
+// let message = 'There are ' + userCount + ' users online.';
+
+// let message2 = `There are ${userCount} users online.`
+
+// console.log(message);
+// console.log(message2);
+
+
+// boolean
+
+// let isEven = true;
+// let isOdd = false;
+
+// console.log(isEven);
+// console.log(isOdd);
+
+// undefined
+// when a variable is not defined, then default value is undefined.
+
+// let course;
+// console.log(course, '[course]');
+
+// null 
+// when value for the variable DO NOT Exists.
+// nothing or empty
+let finalMarks = null;
+console.log(finalMarks);
