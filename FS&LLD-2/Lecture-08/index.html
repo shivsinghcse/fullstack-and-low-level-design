@@ -1,21 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM</title>
 </head>
-<body>
+
+<body class="body-cls" id="body-id">
+    <!-- // create a button,
+    // on clicking of a button - "append" ''Hello'' to the page -->
+
+    <!-- 
+        1. create a button element where event need to be fired.
+        2. attach an event
+        3. manipulate (add, remove, modify) the DOM 
+    -->
     <div id="box"></div>
-    <button onclick="printHello()" id="btn">Print Hello</button>
+    <button id="printBtn">Print Hello</button>
+    <button>Click me!</button>
 
     <script>
-        let box =  document.getElementById('box');
-        function printHello(){
-            //alert()
-            box.innerHTML = '<h1>Hello from DOM</h1>'
-            box.style.textAlign ='center'
-        }
+        let btnEl = document.getElementById('printBtn');
+        console.log(btnEl, ': Button element');
+
+
+        btnEl.addEventListener('click', function () {
+            
+            const divEl = document.createElement('div');
+           // add text to my Div
+
+           // 1. using innerText/ InnerHTML
+
+            divEl.innerText = "Hello";
+
+            // 2. using createTextNode
+
+            // const divText = document.createTextNode('Hello');
+            // divEl.appendChild(divText);
+
+            let bodyEl = document.querySelector('body');
+            // let bodyElById = document.querySelector('#body-id');
+            // let bodyElBycls = document.querySelector('.body-cls');
+
+            // console.log(bodyEl);
+            // console.log(bodyElById);
+            // console.log(bodyElBycls);
+            
+            bodyEl.appendChild(divEl);
+
+        })
+
+
+
+
     </script>
 </body>
+
 </html>
